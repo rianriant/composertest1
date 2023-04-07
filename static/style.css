@@ -67,11 +67,6 @@
   opacity: 0;
 }
 
-@media (max-width: 900px) {
-  .main-name {
-    font-size: 52px;
-  }
-}
 
 .main-name-sign {
   font-family: "Oswald";
@@ -105,7 +100,7 @@
 
 @media (max-width: 900px) {
   .about-short {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -120,19 +115,43 @@
   margin-bottom: 10px;
 }
 
+.track-title {
+  letter-spacing: 3px;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.track-description {
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 3%;
+}
+
+@media (max-width: 900px) {
+  .track-description {
+    margin-bottom: 6%;
+  }
+}
+
+
 .music-slide {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+/*
 .music-container {
   margin-top: auto;
   margin-bottom: 9%;
 }
+ */
 
 .about-slide {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .tracks-controls-prev img, .tracks-controls-next img {
@@ -147,6 +166,15 @@
   opacity: 0.8;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+@media (max-width: 900px) {
+  .tracks-controls-prev img, .tracks-controls-next img, .tracks-controls-play-pause img {
+    height: 48px;
+    width: 48px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .tracks-controls {
@@ -175,15 +203,14 @@
 }
 
 .contacts-wrapper {
-  margin-top: 5%;
   display: flex;
   justify-content: space-evenly;
 }
 
 
 .contact-icon img {
-  width: 26px;
-  height: 26px;
+  width: 34px;
+  height: 34px;
   opacity: 0.8;
   margin-left: 15px;
   margin-right: 15px;
@@ -203,21 +230,29 @@
   border-radius: 50%;
 }
 
+
 @media (max-width: 900px) {
   .about-portrait-wrapper .portrait-wrapper img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
 }
 
+
+/*
 .about-container {
   margin-top: auto;
   margin-bottom: 50px;
 }
+ */
 
 .about-upper-level {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: end;
+}
+
+.outer-contacts-wrapper {
+  padding-top: 5%;
 }
